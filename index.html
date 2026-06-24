@@ -1,34 +1,81 @@
-html
-	<!DOCTYPE html>
+```html
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Mithamo420</title>
+  <title>Aura Petals Beauty Parlour & Spa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      background: linear-gradient(135deg, #667eea 0%,#764ba2 100%)
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
       color: white;
       font-family: Arial;
       text-align: center;
-      padding-top: 120px;
+      padding: 40px 20px;
       margin: 0;
     }
-    h1 { 
-      fo
-nt-size: 48px; 
-      margin-bottom: 20px;
+    h1 { font-size: 32px; margin-bottom: 8px; }
+    .tagline { font-size: 18px; opacity: 0.9; margin-bottom: 30px; }
+    .services {
+      background: rgba(255,255,255,0.2);
+      padding: 25px;
+      border-radius: 20px;
+      max-width: 420px;
+      margin: 0 auto 25px;
     }
-    p { 
+    h2 { margin-top: 0; margin-bottom: 20px; }
+    .service { 
       font-size: 18px; 
-      opacity: 0.9;
+      margin: 10px 0; 
+      display: flex; 
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      padding-bottom: 6px;
+      text-align: left;
+    }
+    .price { font-size: 17px; font-weight: bold; }
+    .btn {
+      display: block;
+      margin: 12px auto;
+      padding: 14px 25px;
+      border-radius: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      max-width: 260px;
+    }
+    .call-btn {
+      background: white;
+      color: #f5576c;
+    }
+    .whatsapp-btn {
+      background: #25D366;
+      color: white;
     }
   </style>
 </head>
 <body>
-  <h1>Hello from Termux! 📱</h1>
-  <p>Built offline on my phone</p>
-  <p>Kikuyu, Central Province, KE</p>
+  <h1>✨ Aura Petals Beauty Parlour & Spa</h1>
+  <p class="tagline">Where Beauty Blooms</p>
+  
+  <div class="services">
+    <h2>Our Services & Prices</h2>
+    <div class="service">Manicure <span class="price">KSh 400</span></div>
+    <div class="service">Plain Gel <span class="price">KSh 400</span></div>
+    <div class="service">Tips Gel <span class="price">KSh 700</span></div>
+    <div class="service">Pedicure Plain <span class="price">KSh 500</span></div>
+    <div class="service">Pedicure + Gel <span class="price">KSh 800</span></div>
+    <div class="service">Sticokons <span class="price">KSh 500</span></div>
+    <div class="service">Acrylic <span class="price">KSh 3,000</span></div>
+    <div class="service">Builder Tips <span class="price">KSh 1,200</span></div>
+    <div class="service">Builder Gel Overlay <span class="price">KSh 1,000</span></div>
+    <div class="service">Gum Gel Overlay <span class="price">KSh 1,500</span></div>
+    <div class="service">Soak Off Tips <span class="price">KSh 100</span></div>
+    <div class="service">Soak Off Builder Gel <span class="price">KSh 150</span></div>
+    <div class="service">Soak Off Gum Gel <span class="price">KSh 200</span></div>
+    <div class="service">Ear Piercing <span class="price">KSh 300</span></div>
+  </div>
+  
+  <a href="tel:+254716397341" class="btn call-btn">📞 Tap to Call</a>
+  <a href="https://wa.me/254716397341" class="btn whatsapp-btn">💬 Book on WhatsApp</a>
 </body>
-</html> 
-git add .
-git commit -m "new design"
-git push
+</html>
