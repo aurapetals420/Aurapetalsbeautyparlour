@@ -1,1 +1,20 @@
-
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nails Menu - Aura Petals 30% Deposit</title>
+<style>*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}body{background:#fff9fb}.top{background:#ff4d6d;color:#fff;padding:14px;text-align:center;position:sticky;top:0}.top a{color:#fff;text-decoration:none;margin:0 8px;font-weight:bold;font-size:13px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:12px;max-width:900px;margin:auto}.card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,.1)}.card img{width:100%;height:220px;object-fit:cover}.info{padding:12px;text-align:center}.price{color:#ff4d6d;font-weight:800;font-size:18px}.dep{background:#fff0f3;color:#ff4d6d;border:1px dashed #ff8fab;padding:5px 10px;border-radius:20px;font-size:12px;display:inline-block;margin:5px 0;font-weight:700}.btn{background:#25D366;color:#fff;padding:10px;display:block;border-radius:25px;text-decoration:none;margin-top:8px;font-size:13px;font-weight:bold}</style></head><body>
+<div class="top"><a href="index.html">🏠 Home</a> <a href="nails.html">💅 Nails</a> <a href="lashes.html">👁️ Lashes & Brows</a></div>
+<h2 style="text-align:center;color:#ff4d6d;margin:18px">💅 Nails Menu - 30% Deposit to Book</h2>
+<div class="grid">
+<div class="card"><img src="almond.jpg"><div class="info"><b>Almond Nails</b><div class="price">KSh 800</div><div class="dep">Deposit 30% = KSh 240</div><a class="btn" href="https://wa.me/254716397341?text=Almond%20KSh%20800%20Deposit%20240">Book WhatsApp</a></div></div>
+<div class="card"><img src="long-almond-art.jpg"><div class="info"><b>Long Almond + Art</b><div class="price">KSh 1,000</div><div class="dep">Deposit 30% = KSh 300</div><a class="btn" href="https://wa.me/254716397341?text=Long%20Almond%20Art%20KSh%201000%20Deposit%20300">Book WhatsApp</a></div></div>
+<div class="card"><img src="short-almond-art.jpg"><div class="info"><b>Short Almond + Art</b><div class="price">KSh 1,200</div><div class="dep">Deposit 30% = KSh 360</div><a class="btn" href="https://wa.me/254716397341?text=Short%20Almond%20KSh%201200%20Deposit%20360">Book</a></div></div>
+<div class="card"><img src="short-red-tips.jpg"><div class="info"><b>Short Red Tips</b><div class="price">KSh 800</div><div class="dep">Deposit 30% = KSh 240</div><a class="btn" href="https://wa.me/254716397341?text=Short%20Red%20Tips%20KSh%20800%20Deposit%20240">Book</a></div></div>
+<div class="card"><img src="solid-colour.jpg"><div class="info"><b>Solid Colour</b><div class="price">KSh 700</div><div class="dep">Deposit 30% = KSh 210</div><a class="btn" href="https://wa.me/254716397341?text=Solid%20Colour%20KSh%20700%20Deposit%20210">Book</a></div></div>
+<div class="card"><img src="square-french.jpg"><div class="info"><b>Square French</b><div class="price">KSh 1,300</div><div class="dep">Deposit 30% = KSh 390</div><a class="btn" href="https://wa.me/254716397341?text=Square%20French%20KSh%201300%20Deposit%20390">Book</a></div></div>
+<div class="card"><img src="stiletto-art.jpg"><div class="info"><b>Stiletto Art</b><div class="price">KSh 1,200</div><div class="dep">Deposit 30% = KSh 360</div><a class="btn" href="https://wa.me/254716397341?text=Stiletto%20Art%20KSh%201200%20Deposit%20360">Book</a></div></div>
+<div class="card"><img src="burgundy.jpg"><div class="info"><b>Burgundy Almond</b><div class="price">KSh 800</div><div class="dep">Deposit 30% = KSh 240</div><a class="btn" href="https://wa.me/254716397341?text=Burgundy%20KSh%20800%20Deposit%20240">Book</a></div></div>
+</div>
+<div style="text-align:center;padding:20px;background:#fff;margin:15px;border-radius:16px;max-width:900px;margin:15px auto">
+<b style="color:#ff4d6d">M-PESA 0716397341 - 30% deposit secures your slot, balance at shop</b><br><br>
+<a href="index.html" style="background:#ff4d6d;color:#fff;padding:12px 22px;border-radius:30px;text-decoration:none">← Back Home</a>
+</div>
+</body></html>
