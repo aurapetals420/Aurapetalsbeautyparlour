@@ -1,70 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AURA PETALS BEAUTY PARLOUR | Where Beauty Blooms - Kikuyu</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial}
-body{background:#fffafb;color:#333}
-nav{display:flex;justify-content:space-between;padding:15px 20px;background:white;position:sticky;top:0;z-index:99;box-shadow:0 2px 10px #0001}
-nav b{color:#ff2e78;font-style:italic;font-size:22px}
-nav a{text-decoration:none;color:#333;margin-left:15px;font-weight:600;font-size:14px}
-nav a.active{color:#ff2e78}
-.hero{background:linear-gradient(135deg,#ff7aa8,#ff2e78);color:white;text-align:center;padding:60px 20px;border-radius:0 0 30px 30px}
-.hero h1{font-size:36px;font-style:italic;line-height:1.1}
-.hero p{margin:15px 0;opacity:.9}
-.btn{display:inline-block;padding:13px 28px;border-radius:30px;text-decoration:none;font-weight:bold;margin:8px}
-.btn-black{background:black;color:white}
-.btn-green{background:#25D366;color:white}
-.btn-white{background:white;color:#ff2e78}
-.card{background:white;border-radius:20px;padding:20px;margin:15px;box-shadow:0 8px 25px #0001}
-.badge{background:#ffe4ec;color:#ff2e78;padding:5px 12px;border-radius:20px;font-size:12px;font-weight:bold}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:15px}
-@media(max-width:600px){.grid{grid-template-columns:1fr}}
-.review{border-left:4px solid #ff2e78;padding-left:12px;margin:12px 0}
-.faq{border-bottom:1px solid #eee;padding:12px 0}
-.faq b{display:block;margin-bottom:4px}
-.float{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;box-shadow:0 4px 15px #0005;z-index:100}
-</style>
-</head>
-<body>
-<nav><b>AURA PETALS</b><div><a class="active" href="index.html">Home</a><a href="nails.html">Nails</a><a href="services.html">Services</a></div></nav>
-
-<div class="hero">
-<h1>AURA PETALS<br>BEAUTY PARLOUR</h1>
-<p>Where Beauty Blooms ✨</p>
-<p style="background:white;color:#ff2e78;display:inline-block;padding:8px 16px;border-radius:20px;font-size:13px;font-weight:bold">📍 Ndumbu-ini 87 Road, Opp Elim Apartments, Koppa - Uthiru</p><br><br>
-<a href="https://wa.me/254716397341?text=Hi%20Aura%20Petals%20I%20want%20to%20book" class="btn btn-black">WhatsApp 0716397341</a>
-<a href="nails.html" class="btn btn-white">View Nails & Prices</a>
-<p style="margin-top:15px;font-size:13px">M-PESA 0716397341 - 30% Deposit to Book</p>
-</div>
-
-<div class="card">
-<h3>💅 What We Do</h3><br>
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AURA PETALS BEAUTY PARLOUR</title><style>*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}body{background:#fff5f7}nav{display:flex;justify-content:space-between;padding:12px;background:#fff;position:sticky;top:0;box-shadow:0 2px 10px #0001}nav b{color:#ff2e78;font-style:italic}.hero{background:linear-gradient(135deg,#ff8fab,#ff2e78);color:#fff;text-align:center;padding:35px 15px;border-radius:0 0 25px 25px}.btn{display:inline-block;padding:11px 20px;border-radius:25px;text-decoration:none;font-weight:bold;margin:5px}.btn-b{background:#000;color:#fff}.btn-g{background:#25D366;color:#fff}.btn-w{background:#fff;color:#ff2e78}.card{background:#fff;margin:10px;border-radius:16px;overflow:hidden;box-shadow:0 4px 10px #0001}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px}.card img{width:100%;height:190px;object-fit:cover}.info{padding:8px;text-align:center}.price{color:#ff2e78;font-weight:bold}.dep{font-size:10px;background:#fff0f4;color:#ff2e78;padding:3px 7px;border-radius:10px;display:inline-block}.float{position:fixed;bottom:15px;right:15px;background:#25D366;color:#fff;width:55px;height:55px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:24px}</style></head><body>
+<nav><b>AURA PETALS</b><div><a href="#nails">Nails</a> <a href="services.html">Services</a></div></nav>
+<div class="hero"><h1 style="font-style:italic">AURA PETALS<br>BEAUTY PARLOUR</h1><p>Where Beauty Blooms</p><p style="background:#fff;color:#ff2e78;padding:5px 10px;border-radius:15px;font-size:11px;display:inline-block;margin:8px 0;font-weight:bold">📍 Ndumbu-ini 87 Road, Opp Elim Apartments, Koppa Uthiru</p><br><a class="btn btn-b" href="https://wa.me/254716397341">WhatsApp 0716397341</a><a class="btn btn-w" href="#nails">View Nails</a><br><small>M-PESA 0716397341 - 30% Deposit</small></div>
+<div style="text-align:center;padding:12px"><h3 style="color:#ff2e78">Nails - Price + Deposit</h3></div>
 <div class="grid">
-<div><span class="badge">POPULAR</span><br><b>Nails Art</b><br><small>Gel, Acrylic, French, Stiletto, Almond - 700-1300</small></div>
-<div><span class="badge">NEW</span><br><b>Lashes</b><br><small>Extensions, Volume, Natural - 1500-3000</small></div>
-<div><b>Eyebrows</b><br><small>Microshading, Tint, Shaping</small></div>
-<div><b>Pedicure</b><br><small>Full spa & gel pedicure</small></div>
+<div class="card"><img src="almond_.jpg"><div class="info"><b>Almond</b><div class="price">800</div><div class="dep">Deposit 240</div><a class="btn btn-g" style="display:block;font-size:11px" href="https://wa.me/254716397341?text=Almond%20800">Book WhatsApp</a></div></div>
+<div class="card"><img src="square-french_.jpg" onerror="this.src='almond_.jpg'"><div class="info"><b>Square French</b><div class="price">1300</div><div class="dep">Deposit 390</div><a class="btn btn-g" style="display:block;font-size:11px" href="https://wa.me/254716397341?text=Square%20French%201300">Book</a></div></div>
+<div class="card"><img src="stiletto-art_.jpg" onerror="this.src='almond_.jpg'"><div class="info"><b>Stiletto Art</b><div class="price">1200</div><div class="dep">Deposit 360</div><a class="btn btn-g" style="display:block;font-size:11px" href="https://wa.me/254716397341">Book</a></div></div>
+<div class="card"><img src="burgundy1_.jpg"><div class="info"><b>Burgundy</b><div class="price">800</div><div class="dep">Deposit 240</div><a class="btn btn-g" style="display:block;font-size:11px" href="https://wa.me/254716397341">Book</a></div></div>
+<div class="card"><img src="long-almond-art_.jpg"><div class="info"><b>Long Almond Art</b><div class="price">1000</div><div class="dep">Deposit 300</div><a class="btn btn-g" style="display:block;font-size:11px" href="https://wa.me/254716397341">Book</a></div></div>
+<div class="card"><img src="short-almond-art_.jpg"><div class="info"><b>Short Almond Art</b><div class="price">1200</div><div class="dep">Deposit 360</div><a class="btn btn-g" style="display:block;font-size:11px" href="https://wa.me/254716397341">Book</a></div></div>
+<div class="card"><img src="short-red-tips_.jpg"><div class="info"><b>Short Red Tips</b><div class="price">800</div><div class="dep">Deposit 240</div><a class="btn btn-g" style="display:block;font-size:11px" href="https://wa.me/254716397341">Book</a></div></div>
+<div class="card"><img src="solid-colour_.jpg"><div class="info"><b>Solid Colour</b><div class="price">700</div><div class="dep">Deposit 210</div><a class="btn btn-g" style="display:block;font-size:11px" href="https://wa.me/254716397341">Book</a></div></div>
 </div>
-<a href="services.html" class="btn btn-black" style="width:100%;text-align:center">See All Services & Prices</a>
-</div>
-
-<div class="card">
-<h3>⭐ Customer Reviews</h3>
-<div class="review"><b>Wanjiku M. - Kikuyu</b><br><small>★★★★★ "Best nails in Ndumbu-ini! My almond nails lasted 4 weeks. Deposit system is so easy via M-PESA."</small></div>
-<div class="review"><b>Brian K. - Uthiru</b><br><small>★★★★★ "Booked for my wife, service was professional. WhatsApp response is instant."</small></div>
-<div class="review"><b>Faith A. - Kinoo</b><br><small>★★★★★ "Aura Petals is now my home. Clean, affordable and beautiful results."</small></div>
-</div>
-
-<div class="card">
-<h3>📍 Find Us</h3>
-<p style="margin:10px 0">Ndumbu-ini 87 Road, Opposite Elim Apartments, Koppa - Uthiru.</p>
-<a href="https://www.google.com/maps/search/?api=1&query=Ndumbu-ini+87+Road+Elim+Apartments" class="btn btn-white" style="border:1px solid #ff2e78;width:100%;text-align:center">Open in Google Maps</a>
-<iframe style="width:100%;height:200px;border:0;border-radius:15px;margin-top:12px" src="https://maps.google.com/maps?q=Ndumbu-ini%20Rd%&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
-</div>
-
-<div style="text-align:center;padding:30px;color:#999;font-size:12px">© 2026 AURA PETALS BEAUTY PARLOUR<br>0716397341 • </div>
-<a href="https://wa.me/254716397341" class="float">💬</a>
-</body>
-</html>
+<div style="background:#000;color:#fff;margin:10px;padding:15px;border-radius:15px;text-align:center;font-size:13px"><b>How to Book</b><br>1. Tap Book WhatsApp<br>2. Send 30% deposit to M-PESA 0716397341<br>3. Come on your date!</div>
+<div style="background:#fff;margin:10px;padding:12px;border-radius:15px"><h4>⭐ Reviews</h4><p style="font-size:12px;margin:6px 0;background:#fff5f7;padding:8px;border-radius:8px">★★★★★ Wanjiku Kikuyu - Best nails in Ndumbu-ini!</p><p style="font-size:12px;margin:6px 0;background:#fff5f7;padding:8px;border-radius:8px">★★★★★ Grace Uthiru - Near Elim Apartments, love it</p></div>
+<div style="background:#fff;margin:10px;padding:12px;border-radius:15px"><h4>❓ FAQ</h4><p style="font-size:12px;margin:6px 0"><b>Deposit?</b> 30% to 0716397341 secures slot</p><p style="font-size:12px;margin:6px 0"><b>Where?</b> Ndumbu-ini 87 Road Opposite Elim Apartments Koppa Uthiru</p><p style="font-size:12px;margin:6px 0"><b>Walk-in?</b> Yes but booking priority</p></div>
+<div style="text-align:center;padding:20px;font-size:11px;color:#999">AURA PETALS BEAUTY PARLOUR © 2026<br>0716397341</div>
+<a class="float" href="https://wa.me/254716397341">💬</a></body></html>
