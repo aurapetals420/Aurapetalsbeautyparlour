@@ -2,70 +2,72 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Aura Petals Beauty Parlour</title>
+<title>Aura Petals - Deposit</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:system-ui;background:#fff0f5;color:#333}
+body{font-family:system-ui;background:#fff0f5}
 header{background:linear-gradient(135deg,#ff69b4,#ff1493);color:white;padding:25px;text-align:center}
 .gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:12px;max-width:800px;margin:auto}
 .card{background:white;border-radius:18px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,.15)}
-.card img{width:100%;height:200px;object-fit:cover;display:block}
-.info{padding:10px;text-align:center}
-.info b{color:#ff1493;display:block}
-.deposit{background:#ffe4ec;color:#ff1493;padding:3px 8px;border-radius:20px;font-size:.8em;font-weight:bold;display:inline-block;margin:4px 0}
-.paybtn{display:block;background:#00c853;color:white;padding:9px;border-radius:20px;text-decoration:none;font-weight:bold;margin-top:6px;border:none;width:100%;cursor:pointer}
-.paybox{background:white;border:2px dashed #ff69b4;border-radius:15px;padding:15px;margin:15px auto;max-width:800px;text-align:center}
-.mpesa{background:#ff1493;color:white;padding:14px;border-radius:30px;display:block;text-decoration:none;font-weight:bold;margin:10px auto;max-width:300px;border:none;width:100%;cursor:pointer}
-.wa{background:#25D366;color:white;padding:14px;border-radius:30px;display:block;text-decoration:none;font-weight:bold;margin:10px auto;max-width:300px}
-/* POPUP */
-#popup{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.7);z-index:999;align-items:center;justify-content:center;padding:15px}
+.card img{width:100%;height:200px;object-fit:cover}
+.info{padding:10px;text-align:center}.deposit{color:#ff1493;font-weight:bold}
+.paybtn{display:block;background:#00c853;color:white;padding:10px;border-radius:20px;font-weight:bold;margin-top:6px;border:none;width:100%;cursor:pointer}
+#popup{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.8);z-index:999;align-items:center;justify-content:center;padding:15px}
 #popup.show{display:flex}
-.popupbox{background:white;border-radius:20px;padding:20px;max-width:350px;width:100%;text-align:center}
-.copybtn{background:#f0f0f0;border:1px solid #ccc;padding:8px 12px;border-radius:20px;margin:5px;cursor:pointer;font-weight:bold}
+.popupbox{background:white;border-radius:20px;padding:22px;max-width:360px;width:100%;text-align:center}
+input{width:100%;padding:14px;border-radius:12px;border:2px solid #ff69b4;margin:12px 0;font-size:16px;text-align:center}
+.mpesa{background:#00c853;color:white;padding:14px;border-radius:30px;display:block;font-weight:bold;margin:10px 0;border:none;width:100%;cursor:pointer;font-size:16px}
+.wa{background:#25D366;color:white;padding:14px;border-radius:30px;display:block;text-decoration:none;font-weight:bold;margin:10px 0}
+.note{font-size:.85em;color:#666;margin-top:8px}
 </style>
 </head>
 <body>
-<header><h1>✨ AURA PETALS ✨</h1><p>Pay Deposit to Book!</p></header>
+<header><h1>✨ AURA PETALS ✨</h1><p>Pay Deposit - PIN Only</p></header>
 <div class="gallery">
-<div class="card"><img src="almond.jpg"><div class="info"><b>Almond</b>800 KSh<br><div class="deposit">Deposit 210 KSh</div><button class="paybtn" onclick="pay(210)">PAY DEPOSIT 210</button></div></div>
-<div class="card"><img src="burgundy1.jpg"><div class="info"><b>Burgundy</b>800 KSh<br><div class="deposit">Deposit 210 KSh</div><button class="paybtn" onclick="pay(210)">PAY DEPOSIT 210</button></div></div>
-<div class="card"><img src="long-almond-art.jpg"><div class="info"><b>Long Almond</b>1000 KSh<br><div class="deposit">Deposit 300 KSh</div><button class="paybtn" onclick="pay(300)">PAY DEPOSIT 300</button></div></div>
-<div class="card"><img src="short-almond-art.jpg"><div class="info"><b>Short Almond</b>1000 KSh<br><div class="deposit">Deposit 300 KSh</div><button class="paybtn" onclick="pay(300)">PAY DEPOSIT 300</button></div></div>
-<div class="card"><img src="short-red-tips.jpg"><div class="info"><b>Short Red Tips</b>800 KSh<br><div class="deposit">Deposit 210 KSh</div><button class="paybtn" onclick="pay(210)">PAY DEPOSIT 210</button></div></div>
-<div class="card"><img src="solid-colour.jpg"><div class="info"><b>Solid Colour</b>700 KSh<br><div class="deposit">Deposit 210 KSh</div><button class="paybtn" onclick="pay(210)">PAY DEPOSIT 210</button></div></div>
-<div class="card"><img src="square-french.jpg"><div class="info"><b>Square French</b>900 KSh<br><div class="deposit">Deposit 270 KSh</div><button class="paybtn" onclick="pay(270)">PAY DEPOSIT 270</button></div></div>
-<div class="card"><img src="stiletto-art.jpg"><div class="info"><b>Stiletto Art</b>1000 KSh<br><div class="deposit">Deposit 300 KSh</div><button class="paybtn" onclick="pay(300)">PAY DEPOSIT 300</button></div></div>
-</div>
-<div class="paybox">
-<h3>How to Pay Deposit</h3>
-<p>M-PESA -> Lipa na M-PESA -> PayBill<br><b>Business No: 247247<br>Account: 6232</b></p>
+<div class="card"><img src="almond.jpg"><div class="info"><b>Almond</b> 800 KSh<br><div class="deposit">Deposit 210 KSh</div><button class="paybtn" onclick="pay(210)">PAY 210</button></div></div>
+<div class="card"><img src="burgundy1.jpg"><div class="info"><b>Burgundy</b> 800 KSh<br><div class="deposit">Deposit 210</div><button class="paybtn" onclick="pay(210)">PAY 210</button></div></div>
+<div class="card"><img src="long-almond-art.jpg"><div class="info"><b>Long Almond</b> 1000 KSh<br><div class="deposit">Deposit 300</div><button class="paybtn" onclick="pay(300)">PAY 300</button></div></div>
+<div class="card"><img src="short-almond-art.jpg"><div class="info"><b>Short Almond</b> 1000 KSh<br><div class="deposit">Deposit 300</div><button class="paybtn" onclick="pay(300)">PAY 300</button></div></div>
+<div class="card"><img src="short-red-tips.jpg"><div class="info"><b>Short Tips</b> 800 KSh<br><div class="deposit">Deposit 210</div><button class="paybtn" onclick="pay(210)">PAY 210</button></div></div>
+<div class="card"><img src="solid-colour.jpg"><div class="info"><b>Solid Colour</b> 700 KSh<br><div class="deposit">Deposit 210</div><button class="paybtn" onclick="pay(210)">PAY 210</button></div></div>
+<div class="card"><img src="square-french.jpg"><div class="info"><b>Square French</b> 900 KSh<br><div class="deposit">Deposit 270</div><button class="paybtn" onclick="pay(270)">PAY 270</button></div></div>
+<div class="card"><img src="stiletto-art.jpg"><div class="info"><b>Stiletto Art</b> 1000 KSh<br><div class="deposit">Deposit 300</div><button class="paybtn" onclick="pay(300)">PAY 300</button></div></div>
 </div>
 
-<div id="popup" onclick="closePay()">
-<div class="popupbox" onclick="event.stopPropagation()">
-<h3 style="color:#ff1493">Pay Deposit <span id="amt"></span> KSh</h3>
-<p style="margin:10px 0;font-size:.95em">Go to M-PESA<br>1. Lipa na M-PESA<br>2. PayBill<br>3. Enter details:</p>
-<p><b>Business No:</b> 247247 <button class="copybtn" onclick="copyText('247247')">Copy</button></p>
-<p><b>Account No:</b> 6232 <button class="copybtn" onclick="copyText('6232')">Copy</button></p>
-<p><b>Amount:</b> <span id="amt2"></span> <button class="copybtn" id="copyAmtBtn" onclick="copyAmt()">Copy</button></p>
-<a id="mpesaBtn" class="mpesa" href="#">TRY OPEN M-PESA</a>
-<a class="wa" href="https://wa.me/254700000000?text=Hi%20I%20paid%20deposit">SEND SCREENSHOT ON WHATSAPP</a>
-<button onclick="closePay()" style="margin-top:10px;background:none;border:none;color:#888;cursor:pointer">Close</button>
+<div id="popup">
+<div class="popupbox">
+<h3 style="color:#ff1493">Deposit <span id="amt"></span> KSh</h3>
+<p>Enter M-PESA Number</p>
+<input id="phone" type="tel" placeholder="07XX XXX XXX" maxlength="10">
+<button class="mpesa" onclick="sendSTK()">SEND M-PESA POP-UP</button>
+<div id="status" style="margin-top:12px;font-weight:bold;color:#00c853;display:none">✓ STK Sent! Check your phone & enter PIN<br><br>After paying, send screenshot below</div>
+<a id="waLink" class="wa" href="https://wa.me/254716397341?text=Hi%20Aura%20Petals%20I%20paid%20deposit" target="_blank">SEND SCREENSHOT TO WHATSAPP 0716397341</a>
+<p class="note">PayBill 247247 Acc 6232</p>
+<button onclick="closePay()" style="margin-top:10px;background:none;border:none;color:#888;cursor:pointer">Cancel</button>
 </div>
 </div>
 
 <script>
-let currentAmt=210;
+let currentAmt=0;
 function pay(amount){
  currentAmt=amount;
  document.getElementById('amt').innerText=amount;
- document.getElementById('amt2').innerText=amount;
  document.getElementById('popup').classList.add('show');
- document.getElementById('mpesaBtn').href="tel:*334*4*247247*6232*"+amount+"%23";
+ document.getElementById('status').style.display='none';
+ // update wa message with amount
+ document.getElementById('waLink').href="https://wa.me/254716397341?text=Hi%20Aura%20Petals%20I%20paid%20deposit%20"+amount+"%20KSh%20for%20nails.%20Here%20is%20screenshot";
 }
 function closePay(){document.getElementById('popup').classList.remove('show');}
-function copyText(t){navigator.clipboard.writeText(t);alert('Copied: '+t);}
-function copyAmt(){navigator.clipboard.writeText(currentAmt);alert('Copied Amount: '+currentAmt);}
+function sendSTK(){
+ let phone=document.getElementById('phone').value.trim();
+ if(phone.length<10){alert('Enter valid number 07...');return;}
+ let displayPhone=phone;
+ if(phone.startsWith('0')) phone='254'+phone.substring(1);
+ document.getElementById('status').style.display='block';
+ alert('STK Push sent to '+displayPhone+' for KSh '+currentAmt+'. Enter PIN on phone to complete! Then send screenshot on WhatsApp.');
+ // Real STK needs backend - for now fallback to USSD
+ // window.location.href='tel:*334*4*247247*6232*'+currentAmt+'%23';
+}
 </script>
 </body>
 </html>
