@@ -15,23 +15,20 @@
 </div>
 <div id="popup"><div class="popupbox">
 <h3 style="color:#ff1493">Deposit <span id="amt"></span> KSh</h3>
-<p>PayBill: 247247 / Acc: 6232</p>
+<p>PayBill 247247 Acc 6232</p>
 <input id="phone" type="tel" placeholder="Your M-PESA No. 07..." maxlength="10">
-<button class="mpesa" onclick="sendSTK()">1. OPEN M-PESA & PAY - PIN ONLY</button>
-<div id="status" style="display:none;margin-top:12px;color:#00c853;font-weight:bold">Now enter PIN on M-Pesa screen! After paying ↓</div>
-<a id="waLink" class="wa" href="https://wa.me/254716397341?text=Hi%20Aura%20Petals%20I%20paid%20deposit" target="_blank">2. SEND SCREENSHOT TO 0716397341</a>
-<p class="note">Amount <span class="amt2"></span> will be auto-filled</p>
+<button class="mpesa" onclick="sendSTK()">PAY NOW - ENTER PIN</button>
+<a id="waLink" class="wa" href="https://wa.me/254716397341" target="_blank">SEND SCREENSHOT TO 0716397341</a>
+<p class="note">Amount <span class="amt2"></span> KSh auto-filled</p>
 <button onclick="closePay()" style="margin-top:10px;background:none;border:none;color:#888">Cancel</button>
 </div></div>
 <script>
 let currentAmt=0;
-function pay(amount){currentAmt=amount;document.querySelectorAll('#amt,.amt2').forEach(e=>e.innerText=amount);document.getElementById('popup').classList.add('show');document.getElementById('status').style.display='none';document.getElementById('waLink').href="https://wa.me/254716397341?text=Hi%20Aura%20Petals%20I%20paid%20deposit%20"+amount+"KSh%20Screenshot%20coming";}
+function pay(amount){currentAmt=amount;document.querySelectorAll('#amt,.amt2').forEach(e=>e.innerText=amount);document.getElementById('popup').classList.add('show');document.getElementById('waLink').href="https://wa.me/254716397341?text=Hi%20Aura%20Petals%20I%20paid%20deposit%20"+amount+"KSh";}
 function closePay(){document.getElementById('popup').classList.remove('show');}
 function sendSTK(){
  let p=document.getElementById('phone').value.trim();
- if(p.length<9){alert('Enter your M-Pesa number');return;}
- document.getElementById('status').style.display='block';
- // This ACTUALLY opens M-Pesa with PayBill filled - user only enters PIN
+ if(p.length<9){alert('Enter M-Pesa number');return;}
  let ussd = "*334*4*4*247247*6232*"+currentAmt+"%23";
  window.location.href = "tel:"+ussd;
 }
