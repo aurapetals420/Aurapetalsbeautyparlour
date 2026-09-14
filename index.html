@@ -9,31 +9,30 @@
 <body>
 <header>
 <h1>✨ AURA PETALS ✨</h1>
-<p>Tap PAY to See Details</p>
 </header>
 <div class="gallery">
-<div class="card"><img src="almond.jpg"><div class="info"><b>Almond</b> 800<br><span>Deposit 210</span><button onclick="pay(210)">PAY 210</button></div></div>
-<div class="card"><img src="burgundy1.jpg"><div class="info"><b>Burgundy</b> 800<br><span>Deposit 210</span><button onclick="pay(210)">PAY 210</button></div></div>
-<div class="card"><img src="long-almond-art.jpg"><div class="info"><b>Long Almond</b> 1000<br><span>Deposit 300</span><button onclick="pay(300)">PAY 300</button></div></div>
-<div class="card"><img src="short-almond-art.jpg"><div class="info"><b>Short Almond</b> 1000<br><span>Deposit 300</span><button onclick="pay(300)">PAY 300</button></div></div>
-<div class="card"><img src="short-red-tips.jpg"><div class="info"><b>Short Tips</b> 800<br><span>Deposit 210</span><button onclick="pay(210)">PAY 210</button></div></div>
-<div class="card"><img src="solid-colour.jpg"><div class="info"><b>Solid Colour</b> 700<br><span>Deposit 210</span><button onclick="pay(210)">PAY 210</button></div></div>
-<div class="card"><img src="square-french.jpg"><div class="info"><b>Square French</b> 900<br><span>Deposit 270</span><button onclick="pay(270)">PAY 270</button></div></div>
-<div class="card"><img src="stiletto-art.jpg"><div class="info"><b>Stiletto Art</b> 1000<br><span>Deposit 300</span><button onclick="pay(300)">PAY 300</button></div></div>
+<div class="card"><img src="almond.jpg"><div class="info"><b>Almond</b> 800<br><span>Deposit 210</span><button onclick="pay(210)">Deposit 210</button></div></div>
+<div class="card"><img src="burgundy1.jpg"><div class="info"><b>Burgundy</b> 800<br><span>Deposit 210</span><button onclick="pay(210)">Deposit 210</button></div></div>
+<div class="card"><img src="long-almond-art.jpg"><div class="info"><b>Long Almond</b> 1000<br><span>Deposit 300</span><button onclick="pay(300)">Deposit 300</button></div></div>
+<div class="card"><img src="short-almond-art.jpg"><div class="info"><b>Short Almond</b> 1000<br><span>Deposit 300</span><button onclick="pay(300)">Deposit 300</button></div></div>
+<div class="card"><img src="short-red-tips.jpg"><div class="info"><b>Short Tips</b> 800<br><span>Deposit 210</span><button onclick="pay(210)">Deposit 210</button></div></div>
+<div class="card"><img src="solid-colour.jpg"><div class="info"><b>Solid Colour</b> 700<br><span>Deposit 210</span><button onclick="pay(210)">Deposit 210</button></div></div>
+<div class="card"><img src="square-french.jpg"><div class="info"><b>Square French</b> 900<br><span>Deposit 270</span><button onclick="pay(270)">Deposit 270</button></div></div>
+<div class="card"><img src="stiletto-art.jpg"><div class="info"><b>Stiletto Art</b> 1000<br><span>Deposit 300</span><button onclick="pay(300)">Deposit 300</button></div></div>
 </div>
+
 <div id="popup">
-<div class="box">
-<h3 style="color:#ff1493;margin-bottom:12px">Payment Details</h3>
-<p><b>Payment Method:</b> M-Pesa</p>
-<p><b>Amount to Deposit:</b> <span id="amt" style="color:#00c853;font-weight:bold;font-size:18px"></span> KSh</p>
+<div class="box" style="text-align:center;padding:25px">
+<h3 style="color:#ff1493">Payment Details</h3>
+<p style="margin-top:12px"><b>Payment Method:</b> M-Pesa</p>
+<p><b>Amount to Deposit:</b> <span id="amt" style="color:green;font-weight:bold"></span> KSh</p>
 <p><b>Business Number:</b> 247247</p>
 <p><b>Account Number:</b> 6232</p>
-<p style="margin-top:15px;font-weight:bold;color:#ff1493">Thank you ❤️</p>
-<button class="mpesa" onclick="sendSTK()">PAY NOW - ENTER PIN</button>
-<a id="waLink" class="wa" href="https://wa.me/254716397341" target="_blank">SEND SCREENSHOT</a>
-<button class="cancel" onclick="closePay()">Close</button>
+<p style="margin-top:18px;font-weight:bold">Thank you ❤️</p>
+<button onclick="closePay()" style="margin-top:18px;background:black;color:white;border:none;padding:10px 25px;border-radius:20px">Close</button>
 </div>
 </div>
+
 <script src="script.js"></script>
 </body>
 </html>
