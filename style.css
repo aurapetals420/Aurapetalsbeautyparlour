@@ -1,56 +1,16 @@
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-body{background:#fff;color:#222;line-height:1.6}
-.divider{height:1px;background:#eee;margin:0}
-.section{padding:30px 16px;text-align:center;max-width:1100px;margin:auto}
-.section.dark{background:#fff8fc}
-.title{font-size:22px;letter-spacing:1px;margin-bottom:10px;font-weight:800}
-.center{color:#666;margin-bottom:15px;font-size:13px}
-.hero-new{position:relative;min-height:65vh;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('manicure.jpg') center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;padding:25px 18px}
-.hero-content{color:white;max-width:650px}
-.hero-content h1{font-size:22px;line-height:1.2}
-.sub{margin:10px 0;color:#ffd1e8;letter-spacing:3px;font-size:11px;font-weight:700}
-.slogan{font-size:13px;color:#f0f0f0;margin:15px 0;line-height:1.6}
-.btn-main{background:#c2185b;color:white;padding:12px 24px;border-radius:30px;text-decoration:none;font-weight:800;display:inline-block}
-.btn-main.full{width:100%;margin-top:10px}
-.row-btns{margin-top:12px;display:flex;gap:10px;justify-content:center}
-.btn-outline{border:1px solid white;color:white;padding:9px 16px;border-radius:30px;text-decoration:none;font-size:12px;font-weight:700}
-.service-list{max-width:340px;margin:0 auto 18px;text-align:left}
-.service-list div{padding:8px 0;border-bottom:1px solid #f5f5f5;font-size:14px}
-.btn-pink{background:white;border:1px solid #c2185b;color:#c2185b;padding:10px 22px;border-radius:30px;text-decoration:none;display:inline-block;font-weight:700;margin-top:8px;font-size:13px}
-.why-list{max-width:340px;margin:auto;text-align:left}
-.why-list p{padding:6px 0;font-size:13px}
-.work-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:14px}
-.work{border-radius:10px;overflow:hidden;height:85px}
-.work img{width:100%;height:100%;object-fit:cover}
-.services-section{padding:25px 12px;background:#fff8fc}
-.services-container{max-width:1100px;margin:auto}
-.section-heading{text-align:center;margin-bottom:18px}
-.section-heading span{color:#c2185b;font-size:10px;letter-spacing:2px;font-weight:700}
-.section-heading h2{font-size:20px}
-.section-heading p{font-size:12px;color:#777}
-.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
-.service-card{background:white;border-radius:10px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.06);border:1px solid #ffe4f0}
-.service-card img{width:100%;height:90px;object-fit:cover}
-.service-info{padding:8px 6px;text-align:center}
-.service-info h3{font-size:10px;margin-bottom:4px}
-.price{font-size:13px;font-weight:800;color:#c2185b}
-.service-info p{font-size:9px;color:#666;margin-bottom:6px}
-.book-service{display:block;background:#c2185b;color:white;padding:5px;border-radius:20px;text-decoration:none;font-size:10px;font-weight:700}
-.book-box{max-width:360px;margin:12px auto;background:white;padding:14px;border-radius:14px;box-shadow:0 4px 12px rgba(0,0,0,0.08)}
-.book-box input,.book-box select{width:100%;padding:10px;margin:4px 0;border-radius:8px;border:1px solid #ddd;font-size:13px}
-footer{background:#111;color:white;padding:20px;text-align:center;font-size:12px}
-#popup{position:fixed;inset:0;background:rgba(0,0,0,0.6);display:none;align-items:center;justify-content:center;z-index:99}
-#popup.show{display:flex}
-#popup .box{background:white;padding:20px;border-radius:16px;width:85%;max-width:280px;text-align:center}
-.float-wa{position:fixed;bottom:12px;right:12px;background:#25d366;color:white;padding:9px 14px;border-radius:30px;text-decoration:none;font-weight:700;font-size:12px;z-index:10}
-.top-nav{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;background:#111;color:white;position:sticky;top:0;z-index:10}
-.top-nav a{color:#ffb3d9;text-decoration:none;font-weight:700;font-size:12px}
-.services-page{max-width:600px;margin:auto;padding:8px 12px 30px;display:flex;flex-direction:column;gap:14px}
-.service-full{background:white;border:1px solid #ffe0ef;border-radius:14px;overflow:hidden;text-align:center;box-shadow:0 3px 10px rgba(0,0,0,0.05)}
-.service-full img{width:100%;height:150px;object-fit:cover}
-.service-full .icon{font-size:13px;margin:10px 0 3px;font-weight:800;letter-spacing:1px}
-.service-full p{font-size:12px;color:#666;padding:0 12px;margin-bottom:10px}
-.price-row{display:flex;justify-content:space-around;background:#fff8fc;padding:8px;margin:0 10px 10px;border-radius:8px;font-size:12px;border:1px dashed #ffc7e1}
-.service-full .btn-pink{margin-bottom:12px;padding:8px 18px;font-size:12px}
-@media (max-width:900px){.work-grid{grid-template-columns:repeat(4,1fr)}.services-grid{grid-template-columns:repeat(3,1fr)}}
-@media (max-width:600px){.hero-content h1{font-size:19px}.slogan{font-size:12px}.services-grid{grid-template-columns:repeat(2,1fr);gap:8px}.service-card img{height:75px}.work{height:70px}.work-grid{gap:5px}.service-full img{height:130px}}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+:root{--pink:#e91e63;--light:#fff5f9;--border:#ffe4ed}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif}
+body{background:#fff;color:#111}
+.top-nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:12px 16px;display:flex;justify-content:space-between}
+.top-nav a{text-decoration:none;color:var(--pink);font-weight:700;font-size:12px}
+.section{padding:28px 16px;max-width:1100px;margin:auto;text-align:center}
+.section h2{font-size:20px;font-weight:800}
+.services-page{max-width:700px;margin:auto;padding:12px;display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.service-full{background:#fff;border:1px solid var(--border);border-radius:20px;overflow:hidden}
+.service-full img{width:100%;height:110px;object-fit:cover}
+.service-full .info{padding:10px}
+.service-full b{font-size:12px}
+.service-full p{font-size:11px;color:#777;margin:3px 0}
+.meta{display:flex;gap:5px;margin:6px 0}
+.meta span{background:#fff5f9;border:1px solid var(--border);padding:3px 7px;border-radius:20px;font-size:10
