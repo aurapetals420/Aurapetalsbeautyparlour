@@ -120,3 +120,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+<div id="lightbox" onclick="this.style.display='none'"><img id="lightbox-img"></div><script>document.addEventListener("click",function(e){if(e.target.tagName=="IMG"&&e.target.closest(".work,.service-card")){document.getElementById("lightbox-img").src=e.target.src;document.getElementById("lightbox").style.display="flex"}})</script>

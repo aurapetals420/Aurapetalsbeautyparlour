@@ -10,3 +10,4 @@
 <div class="service-full"><img src="lashes.jpg"><div class="info"><b>Lashes</b><p>Full eyes</p><div class="meta"><span>KSh 1200</span><span>Dep 300</span></div><a href="index.html#booking" class="book-mini">Book Now</a></div></div>
 <div class="service-full"><img src="ear-piercing.jpg"><div class="info"><b>Piercing</b><p>Safe</p><div class="meta"><span>KSh 500</span><span>Dep 150</span></div><a href="index.html#booking" class="book-mini">Book Now</a></div></div>
 </div></body></html>
+<div id="lightbox" onclick="this.style.display='none'"><img id="lightbox-img"></div><script>document.addEventListener("click",function(e){if(e.target.tagName=="IMG"&&e.target.closest(".service-full")){document.getElementById("lightbox-img").src=e.target.src;document.getElementById("lightbox").style.display="flex"}})</script>

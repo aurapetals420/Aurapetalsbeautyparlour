@@ -1,27 +1,15 @@
+
+
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-body{background:#fff;color:#111}
+body{background:#fff}
 .top-nav{display:flex;justify-content:space-between;padding:12px;background:#fff;border-bottom:1px solid #ffe4ed;position:sticky;top:0;z-index:10}
 .top-nav a{color:#e91e63;text-decoration:none;font-weight:700;font-size:12px}
 .section{padding:20px 14px;max-width:1100px;margin:auto;text-align:center}
-.title{font-size:18px;font-weight:800}
-.center{font-size:12px;color:#777;margin-bottom:12px}
-
-/* ALL PHOTOS - WHOLE & SMALL */
 .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.work{background:#fff;border:1px solid #ffe4ed;border-radius:14px;padding:4px;overflow:hidden}
-.work img{width:100% !important;height:110px !important;object-fit:contain !important;background:#fff8fb !important;border-radius:10px;display:block}
-
-.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
-.service-card{background:#fff;border:1px solid #ffe4ed;border-radius:14px;padding:4px;overflow:hidden}
-.service-card img{width:100% !important;height:75px !important;object-fit:contain !important;background:#fff8fb !important;border-radius:10px;display:block}
-
-.services-page{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:12px;max-width:800px;margin:auto}
-.service-full{background:#fff;border:1px solid #ffe4ed;border-radius:14px;padding:4px;overflow:hidden}
-.service-full img{width:100% !important;height:90px !important;object-fit:contain !important;background:#fff8fb !important;border-radius:10px;display:block}
-
-.service-info,.info{padding:6px 2px;text-align:center}
-.service-info h3,b{font-size:11px}
-.price{font-weight:800;color:#e91e63;font-size:11px}
-.book-service,.book-mini,.btn-pink{background:#111;color:#fff;padding:5px 10px;border-radius:20px;font-size:10px;text-decoration:none;display:inline-block;margin-top:4px}
-.meta span{background:#fff5f9;border:1px solid #ffe4ed;padding:3px 6px;border-radius:20px;font-size:9px;font-weight:600}
-footer{background:#111;color:#fff;padding:20px;text-align:center;font-size:11px;margin-top:20px}
+.work{background:#fff;border:1px solid #ffe4ed;border-radius:14px;padding:4px}
+.work img{width:100%!important;height:110px!important;object-fit:contain!important;background:#fff8fb!important;border-radius:10px;display:block;cursor:zoom-in}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.service-card{background:#fff;border:1px solid #ffe4ed;border-radius:14px;padding:4px}
+.service-card img{width:100%!important;height:75px!important;object-fit:contain!important;background:#fff8fb!important;border-radius:10px;display:block;cursor:zoom-in}
+#lightbox{position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:99999;display:none;align-items:center;justify-content:center}
+#lightbox-img{max-width:92%;max-height:85%;border-radius:18px}
