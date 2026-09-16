@@ -3,119 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AURA PETALS BEAUTY PARLOR - Where Beauty Blooms</title>
+<title>AURA PETALS BEAUTY PARLOR</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<div class="hero">
-<div class="hero-overlay"></div>
-<div class="hero-content">
-<h1>AURA PETALS<br>BEAUTY PARLOR</h1>
-<p class="tagline">Where Beauty Blooms ✨</p>
-<p class="sub">Nails • Beauty • Confidence</p>
-<div class="hero-btns">
-<a href="#booking" class="btn green">BOOK NOW</a>
-<a href="tel:0716397341" class="btn pink">📞 CALL NOW</a>
-</div>
-</div>
-</div>
-
-<div class="quick-bar">
-<a href="#booking">📅 Book</a>
-<a href="https://wa.me/254716397341">💬 WhatsApp</a>
-<a href="tel:0716397341">📞 Call</a>
-<a href="https://www.google.com/maps/search/?api=1&query=Ndumbu-ini+87+Road+Koppa+Uthiru">📍 Directions</a>
-</div>
-
-<section class="section">
-<h2>Our Services</h2>
-<p class="sec-sub">Professional beauty services</p>
-<div class="services">
-<div class="service"><h3>💅 Almond</h3><p>KSh 800</p><span>Deposit 210</span><button onclick="pay(210)">Deposit 210</button></div>
-<div class="service"><h3>💅 Burgundy</h3><p>KSh 800</p><span>Deposit 210</span><button onclick="pay(210)">Deposit 210</button></div>
-<div class="service"><h3>✨ Long Almond Art</h3><p>KSh 1000</p><span>Deposit 300</span><button onclick="pay(300)">Deposit 300</button></div>
-<div class="service"><h3>✨ Short Almond Art</h3><p>KSh 1000</p><span>Deposit 300</span><button onclick="pay(300)">Deposit 300</button></div>
-<div class="service"><h3>💅 Short Red Tips</h3><p>KSh 800</p><span>Deposit 210</span><button onclick="pay(210)">Deposit 210</button></div>
-<div class="service"><h3>💅 Solid Colour</h3><p>KSh 700</p><span>Deposit 210</span><button onclick="pay(210)">Deposit 210</button></div>
-<div class="service"><h3>💅 Square French</h3><p>KSh 900</p><span>Deposit 270</span><button onclick="pay(270)">Deposit 270</button></div>
-<div class="service"><h3>✨ Stiletto Art</h3><p>KSh 1000</p><span>Deposit 300</span><button onclick="pay(300)">Deposit 300</button></div>
-</div>
-</section>
-
-<section class="section light">
-<h2>Beauty Gallery</h2>
-<div class="gallery">
-<img src="almond.jpg" onclick="openImg(this.src)">
-<img src="burgundy1.jpg" onclick="openImg(this.src)">
-<img src="long-almond-art.jpg" onclick="openImg(this.src)">
-<img src="short-almond-art.jpg" onclick="openImg(this.src)">
-<img src="short-red-tips.jpg" onclick="openImg(this.src)">
-<img src="solid-colour.jpg" onclick="openImg(this.src)">
-<img src="square-french.jpg" onclick="openImg(this.src)">
-<img src="stiletto-art.jpg" onclick="openImg(this.src)">
-</div>
-</section>
-
-<section class="section" id="booking">
-<h2>📅 BOOK YOUR APPOINTMENT</h2>
-<div class="book-box">
-<input id="bname" placeholder="Your Name">
-<input id="bphone" placeholder="Your Phone 07...">
-<select id="bservice">
-<option>Almond - 800</option>
-<option>Burgundy - 800</option>
-<option>Long Almond Art - 1000</option>
-<option>Short Almond Art - 1000</option>
-<option>Short Red Tips - 800</option>
-<option>Solid Colour - 700</option>
-<option>Square French - 900</option>
-<option>Stiletto Art - 1000</option>
-</select>
-<input id="bdate" type="date">
-<input id="btime" type="time">
-<button class="btn green full" onclick="sendBooking()">🟢 SEND BOOKING ON WHATSAPP</button>
-</div>
-</section>
-
-<section class="section light">
-<h2>📍 Find Us</h2>
-<p><b>Ndumbu-ini 87 Road</b><br>Opposite Elim Apartments<br>Koppa, Uthiru</p>
-<a href="https://www.google.com/maps/search/?api=1&query=Ndumbu-ini+87+Road+Koppa+Uthiru" class="btn pink">🗺️ GET DIRECTIONS</a>
-</section>
-
-<section class="section">
-<h2>WHY AURA PETALS?</h2>
-<div class="why">
-<div>✨ Beautiful nail designs</div>
-<div>✨ Professional beauty services</div>
-<div>✨ Clean & welcoming environment</div>
-<div>✨ Personalized service</div>
-<div>✨ Convenient booking</div>
-</div>
-</section>
-
-<footer>
-<h3>AURA PETALS BEAUTY PARLOR</h3>
-<p>Where Beauty Blooms ✨</p>
-<p>📞 0716397341 | 💬 WhatsApp</p>
-<p>📍 Ndumbu-ini 87 Road, opposite Elim Apartments, Koppa Uthiru</p>
-</footer>
-
-<div id="popup"><div class="box">
-<h3>Payment Details</h3>
-<p><b>Payment Method:</b> M-Pesa</p>
-<p><b>Amount to Deposit:</b> <span id="amt"></span> KSh</p>
-<p><b>Business Number:</b> 247247</p>
-<p><b>Account Number:</b> 6232</p>
-<p style="margin-top:12px;font-weight:bold">Thank you ❤️</p>
-<button onclick="closePay()">Close</button>
-</div></div>
-
-<div id="imgview" onclick="closeImg()"><img id="bigimg"></div>
-
+<div class="hero"><div class="hero-overlay"></div><div class="hero-content"><h1>AURA PETALS<br>BEAUTY PARLOR</h1><p class="tagline">Where Beauty Blooms ✨</p><div class="hero-btns"><a href="#booking" class="btn green">BOOK NOW</a><a href="tel:0716397341" class="btn pink">📞 CALL NOW</a></div></div></div>
+<div class="quick-bar"><a href="#booking">📅 Book</a><a href="https://wa.me/254716397341">💬 WhatsApp</a><a href="tel:0716397341">📞 Call</a><a href="https://www.google.com/maps/search/?api=1&query=Ndumbu-ini+87+Road+Koppa+Uthiru">📍 Directions</a></div>
+<section id="services" class="services-section"><div class="services-container"><div class="section-heading"><span>💅 AURA PETALS</span><h2>Our Nail Services</h2><p>Choose your favourite nail design and book your appointment.</p></div><div class="services-grid">
+<div class="service-card"><img src="almond.jpg"><div class="service-info"><h3>💅 Almond</h3><div class="price">KSh 800</div><p>Deposit: <strong>KSh 210</strong></p><a href="#booking" class="book-service" onclick="pay(210)">Book Now</a></div></div>
+<div class="service-card"><img src="burgundy1.jpg"><div class="service-info"><h3>💅 Burgundy</h3><div class="price">KSh 800</div><p>Deposit: <strong>KSh 210</strong></p><a href="#booking" class="book-service" onclick="pay(210)">Book Now</a></div></div>
+<div class="service-card"><img src="long-almond-art.jpg"><div class="service-info"><h3>✨ Long Almond Art</h3><div class="price">KSh 1,000</div><p>Deposit: <strong>KSh 300</strong></p><a href="#booking" class="book-service" onclick="pay(300)">Book Now</a></div></div>
+<div class="service-card"><img src="short-almond-art.jpg"><div class="service-info"><h3>✨ Short Almond Art</h3><div class="price">KSh 1,000</div><p>Deposit: <strong>KSh 300</strong></p><a href="#booking" class="book-service" onclick="pay(300)">Book Now</a></div></div>
+<div class="service-card"><img src="short-red-tips.jpg"><div class="service-info"><h3>❤️ Short Red Tips</h3><div class="price">KSh 800</div><p>Deposit: <strong>KSh 210</strong></p><a href="#booking" class="book-service" onclick="pay(210)">Book Now</a></div></div>
+<div class="service-card"><img src="solid-colour.jpg"><div class="service-info"><h3>💜 Solid Colour</h3><div class="price">KSh 700</div><p>Deposit: <strong>KSh 210</strong></p><a href="#booking" class="book-service" onclick="pay(210)">Book Now</a></div></div>
+<div class="service-card"><img src="square-french.jpg"><div class="service-info"><h3>🤍 Square French</h3><div class="price">KSh 900</div><p>Deposit: <strong>KSh 270</strong></p><a href="#booking" class="book-service" onclick="pay(270)">Book Now</a></div></div>
+<div class="service-card"><img src="stiletto-art.jpg"><div class="service-info"><h3>✨ Stiletto Art</h3><div class="price">KSh 1,000</div><p>Deposit: <strong>KSh 300</strong></p><a href="#booking" class="book-service" onclick="pay(300)">Book Now</a></div></div>
+</div></div></section>
+<section class="section" id="booking"><h2>📅 BOOK YOUR APPOINTMENT</h2><div class="book-box"><input id="bname" placeholder="Your Name"><input id="bphone" placeholder="Your Phone 07..."><select id="bservice"><option>Almond - 800</option><option>Burgundy - 800</option><option>Long Almond Art - 1000</option><option>Short Almond Art - 1000</option><option>Short Red Tips - 800</option><option>Solid Colour - 700</option><option>Square French - 900</option><option>Stiletto Art - 1000</option></select><input id="bdate" type="date"><input id="btime" type="time"><button class="btn green full" onclick="sendBooking()">🟢 SEND BOOKING ON WHATSAPP</button></div></section>
+<footer><h3>AURA PETALS BEAUTY PARLOR</h3><p>Where Beauty Blooms ✨</p><p>📞 0716397341 | 💬 WhatsApp</p><p>📍 Ndumbu-ini 87 Road, opposite Elim Apartments, Koppa Uthiru</p></footer>
+<div id="popup"><div class="box"><h3>Payment Details</h3><p><b>Payment Method:</b> M-Pesa</p><p><b>Amount:</b> <span id="amt"></span> KSh</p><p><b>Business:</b> 247247</p><p><b>Account:</b> 6232</p><p style="margin-top:12px;font-weight:bold">Thank you ❤️</p><button onclick="closePay()">Close</button></div></div>
 <a href="https://wa.me/254716397341" class="float-wa">💬 Chat on WhatsApp</a>
-
 <script src="script.js"></script>
 </body>
 </html>
