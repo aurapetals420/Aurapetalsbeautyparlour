@@ -1,0 +1,9 @@
+.top-nav{display:flex;justify-content:space-between;align-items:center;padding:12px 15px;background:#111;color:white;position:sticky;top:0;z-index:10}
+.top-nav a{color:#ffb3d9;text-decoration:none;font-weight:700;font-size:13px}
+.services-page{max-width:700px;margin:auto;padding:10px 14px 40px;display:flex;flex-direction:column;gap:18px}
+.service-full{background:white;border:1px solid #ffe0ef;border-radius:16px;overflow:hidden;text-align:center;box-shadow:0 4px 14px rgba(0,0,0,0.05)}
+.service-full img{width:100%;height:220px;object-fit:cover}
+.service-full .icon{font-size:14px;margin:12px 0 4px;font-weight:800;letter-spacing:1px}
+.service-full p{font-size:13px;color:#666;padding:0 15px;margin-bottom:12px}
+.price-row{display:flex;justify-content:space-around;background:#fff8fc;padding:10px;margin:0 12px 12px;border-radius:10px;font-size:13px;border:1px dashed #ffc7e1}
+.service-full .btn-pink{margin-bottom:15px;background:white;border:1px solid #c2185b;color:#c2185b;padding:10px 22px;border-radius:30px;text-decoration:none;font-weight:700;display:inline-block}
