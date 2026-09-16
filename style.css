@@ -12,4 +12,5 @@ body{background:#fff}
 .service-card{background:#fff;border:1px solid #ffe4ed;border-radius:14px;padding:4px}
 .service-card img{width:100%!important;height:75px!important;object-fit:contain!important;background:#fff8fb!important;border-radius:10px;display:block;cursor:zoom-in}
 #lightbox{position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:99999;display:none;align-items:center;justify-content:center}
-#lightbox-img{max-width:92%;max-height:85%;border-radius:18px}
+#lightbox-img{max-width:92%;max-height:85%;border-radius:18px}.service-card img{height:95px!important}
+.services-grid{grid-template-columns:repeat(3,1fr)!important;gap:10px!important}
