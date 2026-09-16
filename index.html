@@ -7,9 +7,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-<h1>✨ AURA PETALS ✨</h1>
-</header>
+<header><h1>✨ AURA PETALS ✨</h1></header>
 <div class="gallery">
 <div class="card"><img src="almond.jpg"><div class="info"><b>Almond</b> 800<br><span>Deposit 210</span><button onclick="pay(210)">Deposit 210</button></div></div>
 <div class="card"><img src="burgundy1.jpg"><div class="info"><b>Burgundy</b> 800<br><span>Deposit 210</span><button onclick="pay(210)">Deposit 210</button></div></div>
@@ -20,19 +18,15 @@
 <div class="card"><img src="square-french.jpg"><div class="info"><b>Square French</b> 900<br><span>Deposit 270</span><button onclick="pay(270)">Deposit 270</button></div></div>
 <div class="card"><img src="stiletto-art.jpg"><div class="info"><b>Stiletto Art</b> 1000<br><span>Deposit 300</span><button onclick="pay(300)">Deposit 300</button></div></div>
 </div>
-
-<div id="popup">
-<div class="box" style="text-align:center;padding:25px">
-<h3 style="color:#ff1493">Payment Details</h3>
-<p style="margin-top:12px"><b>Payment Method:</b> M-Pesa</p>
-<p><b>Amount to Deposit:</b> <span id="amt" style="color:green;font-weight:bold"></span> KSh</p>
+<div id="popup"><div class="box" style="text-align:center">
+<h3 style="color:#e91e8c">Payment Details</h3>
+<p><b>Payment Method:</b> M-Pesa</p>
+<p><b>Amount to Deposit:</b> <span id="amt"></span> KSh</p>
 <p><b>Business Number:</b> 247247</p>
 <p><b>Account Number:</b> 6232</p>
-<p style="margin-top:18px;font-weight:bold">Thank you ❤️</p>
-<button onclick="closePay()" style="margin-top:18px;background:black;color:white;border:none;padding:10px 25px;border-radius:20px">Close</button>
-</div>
-</div>
-
+<p style="margin-top:15px;font-weight:bold">Thank you</p>
+<button onclick="closePay()" style="margin-top:15px;padding:10px 20px;border-radius:20px;border:none;background:#000;color:#fff">Close</button>
+</div></div>
 <script src="script.js"></script>
 </body>
 </html>
