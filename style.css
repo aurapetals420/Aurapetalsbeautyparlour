@@ -4,14 +4,24 @@ body{background:#fff;color:#111}
 .top-nav a{color:#e91e63;text-decoration:none;font-weight:700;font-size:12px}
 .section{padding:20px 14px;max-width:1100px;margin:auto;text-align:center}
 .title{font-size:18px;font-weight:800}
-.center{font-size:12px;color:#777;margin-bottom:10px}
-.work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-.work{border-radius:16px;overflow:hidden;background:#fff;border:1px solid #ffe4ed;box-shadow:0 2px 8px rgba(0,0,0,.04)}
-.work img{width:100% !important;height:190px !important;object-fit:cover !important;object-position:top center !important;display:block}
-.work .info{padding:8px;text-align:center}
-.services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:12px}
-.service-card{border:1px solid #ffe4ed;border-radius:16px;overflow:hidden;background:#fff}
-.service-card img{width:100% !important;height:90px !important;object-fit:cover;object-position:center}
-.service-info{padding:8px;text-align:center}
-.service-info h3{font-size:11px}
-.price{font-weight:800
+.center{font-size:12px;color:#777;margin-bottom:12px}
+
+/* ALL PHOTOS - WHOLE & SMALL */
+.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.work{background:#fff;border:1px solid #ffe4ed;border-radius:14px;padding:4px;overflow:hidden}
+.work img{width:100% !important;height:110px !important;object-fit:contain !important;background:#fff8fb !important;border-radius:10px;display:block}
+
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+.service-card{background:#fff;border:1px solid #ffe4ed;border-radius:14px;padding:4px;overflow:hidden}
+.service-card img{width:100% !important;height:75px !important;object-fit:contain !important;background:#fff8fb !important;border-radius:10px;display:block}
+
+.services-page{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:12px;max-width:800px;margin:auto}
+.service-full{background:#fff;border:1px solid #ffe4ed;border-radius:14px;padding:4px;overflow:hidden}
+.service-full img{width:100% !important;height:90px !important;object-fit:contain !important;background:#fff8fb !important;border-radius:10px;display:block}
+
+.service-info,.info{padding:6px 2px;text-align:center}
+.service-info h3,b{font-size:11px}
+.price{font-weight:800;color:#e91e63;font-size:11px}
+.book-service,.book-mini,.btn-pink{background:#111;color:#fff;padding:5px 10px;border-radius:20px;font-size:10px;text-decoration:none;display:inline-block;margin-top:4px}
+.meta span{background:#fff5f9;border:1px solid #ffe4ed;padding:3px 6px;border-radius:20px;font-size:9px;font-weight:600}
+footer{background:#111;color:#fff;padding:20px;text-align:center;font-size:11px;margin-top:20px}
