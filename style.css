@@ -1,20 +1,17 @@
-* {margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
 body{background:#fff;color:#111}
-.top-nav{display:flex;justify-content:space-between;padding:12px;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);border-bottom:1px solid #ffe4ed;position:sticky;top:0;z-index:10}
+.top-nav{display:flex;justify-content:space-between;padding:12px;background:#fff;border-bottom:1px solid #ffe4ed;position:sticky;top:0;z-index:10}
 .top-nav a{color:#e91e63;text-decoration:none;font-weight:700;font-size:12px}
 .section{padding:20px 14px;max-width:1100px;margin:auto;text-align:center}
 .title{font-size:18px;font-weight:800}
 .center{font-size:12px;color:#777;margin-bottom:10px}
-/* MAKE NAIL PHOTOS SMALL */
-.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.work{height:90px !important;border-radius:14px;overflow:hidden;background:#f5f5f5}
-.work img{width:100% !important;height:90px !important;object-fit:cover}
+.work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.work{border-radius:16px;overflow:hidden;background:#fff;border:1px solid #ffe4ed;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.work img{width:100% !important;height:190px !important;object-fit:cover !important;object-position:top center !important;display:block}
+.work .info{padding:8px;text-align:center}
 .services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:12px}
 .service-card{border:1px solid #ffe4ed;border-radius:16px;overflow:hidden;background:#fff}
-.service-card img{width:100% !important;height:80px !important;object-fit:cover}
+.service-card img{width:100% !important;height:90px !important;object-fit:cover;object-position:center}
 .service-info{padding:8px;text-align:center}
 .service-info h3{font-size:11px}
-.price{font-weight:800;color:#e91e63;font-size:12px}
-.book-service{background:#111;color:#fff;padding:5px 10px;border-radius:20px;font-size:10px;text-decoration:none;display:inline-block;margin-top:4px}
-footer{background:#111;color:#fff;padding:20px;text-align:center;font-size:11px;margin-top:20px}
-.float-wa{position:fixed;bottom:12px;right:12px;background:#25D366;color:#fff;padding:10px 14px;border-radius:20px;text-decoration:none;font-size:12px}
+.price{font-weight:800
