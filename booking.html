@@ -1,0 +1,74 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Book Appointment - AURA PETALS</title><link rel="stylesheet" href="style.css">
+<style>
+.booking-wrap{max-width:520px;margin:0 auto;background:#fff;border:1px solid #F8E9EC;border-radius:20px;padding:24px;box-shadow:0 8px 30px rgba(0,0,0,.04)}
+.booking-wrap input,.booking-wrap select,.booking-wrap textarea{width:100%;padding:12px;border:1px solid #F8E9EC;border-radius:10px;font-size:12px;font-family:'Poppins';margin-bottom:12px;background:#FFF9F5}
+.booking-wrap label{font-size:11px;font-weight:600;color:#8E4D5C;text-align:left;display:block;margin-bottom:4px}
+.deposit-box{background:linear-gradient(#FFF9F5,#F8E9EC);border:1px dashed #C9A66B;border-radius:12px;padding:14px;font-size:11px;text-align:left;margin:10px 0}
+.confirm-box{display:none;background:#fff;border:2px solid #C9A66B;border-radius:16px;padding:20px;margin-top:20px;text-align:left}
+.pay-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;background:#fff;border-radius:10px;padding:10px;margin-top:8px;border:1px solid #F8E9EC}
+</style>
+</head><body>
+<nav class="top-nav"><div class="logo">Aura Petals</div><div class="nav-links" id="navLinks"><a href="index.html">HOME</a><a href="index.html#services">SERVICES</a><a href="booking.html">BOOK</a><a href="index.html#contact">CONTACT</a></div><div class="menu-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</div></nav>
+
+<section class="section"><h2 class="title">BOOK YOUR BEAUTY SESSION</h2><p class="sub">M-PESA DEPOSIT REQUIRED TO CONFIRM</p>
+
+<div class="booking-wrap">
+<form id="bookingForm" onsubmit="return submitBooking(event)">
+<label>FULL NAME *</label><input type="text" id="name" placeholder="e.g. Faith Wanjiku" required>
+<label>PHONE NUMBER *</label><input type="tel" id="phone" placeholder="07xx xxx xxx" required>
+<label>SELECT SERVICE *</label><select id="service" required><option value="">Choose service...</option><option>Manicure</option><option>Pedicure</option><option>Manicure + Pedicure</option><option>Facial Treatment</option><option>Wig Installation</option><option>Lashes Extension</option><option>Eyebrow Shaping</option><option>Ear Piercing</option><option>Full Package</option></select>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px"><div><label>DATE *</label><input type="date" id="date" required></div><div><label>TIME *</label><input type="time" id="time" required></div></div>
+<label>NOTES (Optional)</label><textarea id="notes" rows="2" placeholder="Any special request?"></textarea>
+
+<div class="deposit-box">
+<b style="color:#242124">💳 M-PESA DEPOSIT: KSh 500</b><br>
+<small>Go to M-Pesa → Lipa na M-Pesa → Paybill</small>
+<div class="pay-row">
+<div><b>Business No.</b><br><span style="font-size:16px;color:#C98F9B;font-weight:700">247247</span></div>
+<div><b>Account No.</b><br><span style="font-size:16px;color:#242124;font-weight:700">6232</span></div>
+</div>
+<small>Amount: KSh 500 • Balance paid after service<br>Refundable if cancelled 24hrs before</small>
+</div>
+
+<label style="font-size:10px"><input type="checkbox" required style="width:auto"> I confirm information is correct and I will send KSh 500 via M-Pesa Business 247247 Acc 6232</label>
+
+<button type="submit" class="btn-pink" style="width:100%;margin-top:10px;padding:14px;font-size:12px">CONFIRM & BOOK NOW</button>
+</form>
+
+<div id="confirmation" class="confirm-box">
+<h3 style="font-family:'Playfair Display',serif;color:#242124">✅ Appointment Request Received!</h3>
+<p style="font-size:11px;margin:12px 0">Thank you! Please complete M-Pesa to confirm.</p>
+<div style="background:#FFF9F5;border-radius:10px;padding:12px;font-size:11px">
+<p id="cName"></p><p id="cPhone"></p><p id="cService"></p><p id="cDate"></p><p id="cTime"></p>
+<div style="margin-top:8px;padding:8px;background:#fff;border-radius:8px;border:1px solid #F8E9EC">
+<b>M-Pesa Paybill:</b><br>Business No: <b style="color:#C98F9B">247247</b><br>Account No: <b>6232</b><br>Amount: <b>KSh 500</b>
+</div>
+</div>
+<br>
+<a id="waConfirm" class="btn-pink" style="width:100%;text-align:center;background:#25D366;border-color:#25D366" target="_blank">📲 SEND WHATSAPP CONFIRMATION</a><br><br>
+<a href="index.html" class="btn-outline" style="width:100%;text-align:center">BACK TO HOME</a>
+</div>
+</div>
+</section>
+
+<footer><div class="footer-brand">Aura Petals BEAUTY PARLOR</div><p style="font-size:11px">📞 0716397341 | M-Pesa: Business 247247 Acc 6232</p></footer>
+
+<script>
+document.getElementById('date').min = new Date().toISOString().split('T')[0];
+function submitBooking(e){
+e.preventDefault();
+let n=document.getElementById('name').value, p=document.getElementById('phone').value, s=document.getElementById('service').value, d=document.getElementById('date').value, t=document.getElementById('time').value, notes=document.getElementById('notes').value;
+document.getElementById('bookingForm').style.display='none';
+document.getElementById('confirmation').style.display='block';
+document.getElementById('cName').innerText='👤 Name: '+n;
+document.getElementById('cPhone').innerText='📞 Phone: '+p;
+document.getElementById('cService').innerText='💅 Service: '+s;
+document.getElementById('cDate').innerText='📅 Date: '+d;
+document.getElementById('cTime').innerText='⏰ Time: '+t;
+let msg=`Hello AURA PETALS BEAUTY PARLOR!%0A%0A✅ NEW BOOKING:%0AName: ${n}%0APhone: ${p}%0AService: ${s}%0ADate: ${d}%0ATime: ${t}%0ANotes: ${notes}%0A%0A💳 M-Pesa Deposit: KSh 500%0ABusiness No: 247247%0AAccount No: 6232%0A%0APlease confirm my appointment. Thank you!`;
+document.getElementById('waConfirm').href=`https://wa.me/254716397341?text=${msg}`;
+window.scrollTo({top:document.getElementById('confirmation').offsetTop-80,behavior:'smooth'});
+return false;
+}
+</script>
+</body></html>
