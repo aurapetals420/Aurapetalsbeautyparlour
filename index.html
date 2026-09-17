@@ -1,49 +1,65 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AURA PETALS BEAUTY PARLOR</title><link rel="stylesheet" href="style.css"></head><body>
-<nav class="top-nav"><div class="logo">Aura Petals</div><div class="menu-toggle" id="menuBtn">☰</div><div class="nav-links" id="navLinks"><a href="#nails">NAILS</a><a href="#services">SERVICES</a><a href="#gallery">GALLERY</a><a href="booking.html">BOOK</a><a href="#contact">CONTACT</a></div></nav>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AURA PETALS</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:Arial}body{background:#FFFAF9;color:#3a1a1a}
+.top-nav{position:sticky;top:0;z-index:100;background:#fff;display:flex;justify-content:space-between;align-items:center;padding:12px 16px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.logo{font-family:cursive;color:#C17C7C;font-size:22px}.menu-toggle{font-size:24px;cursor:pointer}
+.nav-links{display:none;flex-direction:column;position:absolute;top:52px;left:0;right:0;background:#fff;padding:16px;box-shadow:0 4px 12px rgba(0,0,0,.12)}.nav-links.open{display:flex}.nav-links a{padding:12px 0;text-decoration:none;color:#5a2a2a;font-weight:bold;font-size:14px;border-bottom:1px solid #f5e0e0}
+.title{text-align:center;font-weight:bold;font-size:19px;margin:18px 10px 6px 10px}.sub{text-align:center;font-size:11px;color:#9a6a6a;margin-bottom:14px;padding:0 12px}
+.services-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 12px 12px 12px}
+.service-card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,.07);border:1px solid #f2d6d6;text-align:center;cursor:pointer}
+.service-card img{width:100%;height:140px;object-fit:cover;display:block}
+.service-body{padding:10px 8px}
+.service-body h3{font-size:12px;margin:4px 0}.service-body p{font-size:10px;color:#777;margin:2px 0}
+.price{font-weight:bold;font-size:15px;margin:4px 0 2px 0}.dep{font-weight:bold;color:#E91E63!important;background:#FFE8EE;padding:5px 10px;border-radius:20px;display:inline-block;font-size:11px;margin:5px 0;border:1px solid #FFB6C1}
+.btn-pink{display:inline-block;background:#E91E63!important;color:#fff!important;padding:9px 16px;border-radius:24px;font-size:10px;font-weight:bold;text-decoration:none;margin-top:6px;border:none;letter-spacing:.5px}
+.work-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:12px}.work{position:relative;border-radius:14px;overflow:hidden;background:#fff;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.06)}.work img{width:100%;height:200px;object-fit:cover;display:block}.price-tag{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.85));color:#fff;padding:28px 8px 8px 8px;font-size:11px}
+</style></head><body>
+<nav class="top-nav"><div class="logo">Aura Petals</div><div class="menu-toggle" id="menuBtn">☰</div><div class="nav-links" id="navLinks"><a href="#nails">NAILS</a><a href="#services">SERVICES</a><a href="#gallery">GALLERY</a><a href="booking.html">BOOK</a></div></nav>
 
-<section class="hero" style="text-align:center;padding:30px 16px"><h1 style="font-family:cursive;color:#8a3a4a">Aura Petals BEAUTY PARLOR</h1><p>M-Pesa Business <b>247247</b> Account <b>6232</b> • 30% Deposit to Book</p><a class="btn-pink" href="booking.html">BOOK NOW</a></section>
+<section id="nails" style="padding-top:10px"><h2 class="title">NAIL DESIGNS — PRICE + 30% DEPOSIT</h2><p class="sub">TAP PHOTO TO BOOK • PAY DEPOSIT VIA M-PESA 247247 ACC 6232</p><div class="services-grid">
 
-<section class="section" id="nails"><h2 class="title">NAIL DESIGNS — PRICE + 30% DEPOSIT</h2><p class="sub">TAP CARD TO BOOK • PAY DEPOSIT VIA M-PESA 247247 ACC 6232</p><div class="services-grid">
-<div class="service-card" onclick="location.href='booking.html?service=Manicure Solid&price=500&deposit=150'"><div class="service-info"><h3>Manicure / Solid Color</h3><p>One color clean</p><div class="price">KSh 500</div><div class="dep">Deposit 30%: KSh 150</div><span class="btn-pink">BOOK PAY 150</span></div></div>
-<div class="service-card" onclick="location.href='booking.html?service=Short Almond Art&price=600&deposit=180'"><div class="service-info"><h3>Short Almond Art</h3><p>Art + gems short</p><div class="price">KSh 600</div><div class="dep">Deposit: KSh 180</div><span class="btn-pink">BOOK PAY 180</span></div></div>
-<div class="service-card" onclick="location.href='booking.html?service=Short Red Tips&price=600&deposit=180'"><div class="service-info"><h3>Short Red Tips</h3><p>Red French tips</p><div class="price">KSh 600</div><div class="dep">Deposit: KSh 180</div><span class="btn-pink">BOOK PAY 180</span></div></div>
-<div class="service-card" onclick="location.href='booking.html?service=Square French&price=700&deposit=210'"><div class="service-info"><h3>Square French</h3><p>Classic white square</p><div class="price">KSh 700</div><div class="dep">Deposit: KSh 210</div><span class="btn-pink">BOOK PAY 210</span></div></div>
-<div class="service-card" onclick="location.href='booking.html?service=Long Almond Art&price=800&deposit=240'"><div class="service-info"><h3>Long Almond Art</h3><p>Long detailed art</p><div class="price">KSh 800</div><div class="dep">Deposit: KSh 240</div><span class="btn-pink">BOOK PAY 240</span></div></div>
-<div class="service-card" onclick="location.href='booking.html?service=Stiletto Art&price=900&deposit=270'"><div class="service-info"><h3>Stiletto Art</h3><p>Sharp stiletto design</p><div class="price">KSh 900</div><div class="dep">Deposit: KSh 270</div><span class="btn-pink">BOOK PAY 270</span></div></div>
+<div class="service-card" onclick="location.href='booking.html?service=Manicure%20Solid&price=500&deposit=150'">
+<img src="solid-color.jpg" onerror="this.src='https://images.unsplash.com/photo-1604654894610-df63bc536371?w=300'">
+<div class="service-body"><h3>Manicure / Solid Color</h3><p>One color clean</p><div class="price">KSh 500</div><div class="dep">Deposit 30%: KSh 150</div><div class="btn-pink">BOOK PAY 150</div></div></div>
+
+<div class="service-card" onclick="location.href='booking.html?service=Short%20Almond%20Art&price=600&deposit=180'">
+<img src="short-almond-art.jpg" onerror="this.src='https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=300'">
+<div class="service-body"><h3>Short Almond Art</h3><p>Art + gems short</p><div class="price">KSh 600</div><div class="dep">Deposit: KSh 180</div><div class="btn-pink">BOOK PAY 180</div></div></div>
+
+<div class="service-card" onclick="location.href='booking.html?service=Short%20Red%20Tips&price=600&deposit=180'">
+<img src="short-red-tips.jpg" onerror="this.src='https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=300'">
+<div class="service-body"><h3>Short Red Tips</h3><p>Red French tips</p><div class="price">KSh 600</div><div class="dep">Deposit: KSh 180</div><div class="btn-pink">BOOK PAY 180</div></div></div>
+
+<div class="service-card" onclick="location.href='booking.html?service=Square%20French&price=700&deposit=210'">
+<img src="square-french.jpg" onerror="this.src='https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=300'">
+<div class="service-body"><h3>Square French</h3><p>Classic white square</p><div class="price">KSh 700</div><div class="dep">Deposit: KSh 210</div><div class="btn-pink">BOOK PAY 210</div></div></div>
+
+<div class="service-card" onclick="location.href='booking.html?service=Long%20Almond%20Art&price=800&deposit=240'">
+<img src="long-almond-art.jpg" onerror="this.src='https://images.unsplash.com/photo-1604654894610-df63bc536371?w=300'">
+<div class="service-body"><h3>Long Almond Art</h3><p>Long detailed art</p><div class="price">KSh 800</div><div class="dep">Deposit: KSh 240</div><div class="btn-pink">BOOK PAY 240</div></div></div>
+
+<div class="service-card" onclick="location.href='booking.html?service=Stiletto%20Art&price=900&deposit=270'">
+<img src="stiletto-art.jpg" onerror="this.src='https://images.unsplash.com/photo-1604654894610-df63bc536371?w=300'">
+<div class="service-body"><h3>Stiletto Art</h3><p>Sharp stiletto design</p><div class="price">KSh 900</div><div class="dep">Deposit: KSh 270</div><div class="btn-pink">BOOK PAY 270</div></div></div>
+
 </div></section>
 
-<section class="section light" id="services"><h2 class="title">OTHER SERVICES</h2><div class="services-grid">
-<div class="service-card" onclick="location.href='booking.html?service=Pedicure&price=800&deposit=240'"><div class="service-info"><h3>Pedicure</h3><div class="price">KSh 800</div><div class="dep">Deposit: KSh 240</div><span class="btn-pink">BOOK</span></div></div>
-<div class="service-card" onclick="location.href='booking.html?service=Lashes&price=500&deposit=150'"><div class="service-info"><h3>Lashes</h3><div class="price">KSh 500</div><div class="dep">Deposit: KSh 150</div><span class="btn-pink">BOOK</span></div></div>
-<div class="service-card" onclick="location.href='booking.html?service=Wigs&price=2500&deposit=750'"><div class="service-info"><h3>Wigs 2500</h3><div class="price">KSh 2500</div><div class="dep">Deposit: KSh 750</div><span class="btn-pink">BOOK</span></div></div>
-<div class="service-card" onclick="location.href='booking.html?service=Eyebrows&price=500&deposit=150'"><div class="service-info"><h3>Eyebrows Shaping</h3><div class="price">KSh 500</div><div class="dep">Deposit: KSh 150</div><span class="btn-pink">BOOK</span></div></div>
-<div class="service-card" onclick="location.href='booking.html?service=Facial&price=1000&deposit=300'"><div class="service-info"><h3>Facial Treatments</h3><div class="price">KSh 1000</div><div class="dep">Deposit: KSh 300</div><span class="btn-pink">BOOK</span></div></div>
+<section id="services"><h2 class="title">OTHER SERVICES</h2><div class="services-grid">
+<div class="service-card" onclick="location.href='booking.html?service=Pedicure&price=800&deposit=240'"><img src="pedicure.jpg" onerror="this.src='https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=300'"><div class="service-body"><h3>Pedicure</h3><div class="price">KSh 800</div><div class="dep">Deposit: KSh 240</div><div class="btn-pink">BOOK</div></div></div>
+<div class="service-card" onclick="location.href='booking.html?service=Lashes&price=500&deposit=150'"><img src="lashes.jpg" onerror="this.src='https://images.unsplash.com/photo-1583001809873-a1288d6a34d6?w=300'"><div class="service-body"><h3>Lashes</h3><div class="price">KSh 500</div><div class="dep">Deposit: KSh 150</div><div class="btn-pink">BOOK</div></div></div>
+<div class="service-card" onclick="location.href='booking.html?service=Wigs&price=2500&deposit=750'"><img src="wigs.jpg" onerror="this.src='https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=300'"><div class="service-body"><h3>Wigs Installation</h3><div class="price">KSh 2500</div><div class="dep">Deposit: KSh 750</div><div class="btn-pink">BOOK</div></div></div>
+<div class="service-card" onclick="location.href='booking.html?service=Eyebrows&price=500&deposit=150'"><img src="eyebrows.jpg" onerror="this.src='https://images.unsplash.com/photo-1583001809873-a1288d6a34d6?w=300'"><div class="service-body"><h3>Eyebrows Shaping</h3><div class="price">KSh 500</div><div class="dep">Deposit: KSh 150</div><div class="btn-pink">BOOK</div></div></div>
+<div class="service-card" onclick="location.href='booking.html?service=Facial&price=1000&deposit=300'"><img src="facial.jpg" onerror="this.src='https://images.unsplash.com/photo-1570172619644-dfd03ed1350b?w=300'"><div class="service-body"><h3>Facial Treatments</h3><div class="price">KSh 1000</div><div class="dep">Deposit: KSh 300</div><div class="btn-pink">BOOK</div></div></div>
 </div></section>
 
-<section class="section" id="gallery"><h2 class="title">OUR REAL WORK — TAP TO BOOK</h2><p class="sub">TAP PHOTO TO BOOK THAT DESIGN</p><div class="work-grid" id="galleryGrid" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px"></div></section>
-
-<footer id="contact" style="background:#3a1a1a;color:#fff;padding:20px;text-align:center"><p>M-Pesa Business 247247 Account 6232 • 0716397341 • Ndumbu-ini 87 Road</p></footer>
+<section id="gallery"><h2 class="title">OUR REAL WORK — TAP TO BOOK</h2><div class="work-grid" id="galleryGrid"></div></section>
+<footer style="background:#3a1a1a;color:#fff;padding:18px;text-align:center;font-size:12px"><b>Aura Petals</b><br>M-Pesa Business 247247 Account 6232 • 0716397341</footer>
 
 <script>
-const menuBtn=document.getElementById('menuBtn');const navLinks=document.getElementById('navLinks');
-menuBtn.onclick=()=>navLinks.classList.toggle('open');
-document.querySelectorAll('#navLinks a').forEach(a=>a.onclick=()=>navLinks.classList.remove('open'));
-
-// HARDCODED GALLERY - NO API BLOCK
-const galleryFiles=[
-{name:"solid-color.jpg",t:"Solid Color",p:500,d:150},
-{name:"short-almond-art.jpg",t:"Short Almond Art",p:600,d:180},
-{name:"short-red-tips.jpg",t:"Short Red Tips",p:600,d:180},
-{name:"square-french.jpg",t:"Square French",p:700,d:210},
-{name:"long-almond-art.jpg",t:"Long Almond Art",p:800,d:240},
-{name:"stiletto-art.jpg",t:"Stiletto Art",p:900,d:270}
-];
+const btn=document.getElementById('menuBtn');const links=document.getElementById('navLinks');
+btn.onclick=()=>links.classList.toggle('open');document.querySelectorAll('#navLinks a').forEach(a=>a.onclick=()=>links.classList.remove('open'));
+const files=[{name:"solid-color.jpg",t:"Solid Color",p:500,d:150},{name:"short-almond-art.jpg",t:"Short Almond Art",p:600,d:180},{name:"short-red-tips.jpg",t:"Short Red Tips",p:600,d:180},{name:"square-french.jpg",t:"Square French",p:700,d:210},{name:"long-almond-art.jpg",t:"Long Almond Art",p:800,d:240},{name:"stiletto-art.jpg",t:"Stiletto Art",p:900,d:270}];
 const grid=document.getElementById('galleryGrid');
-galleryFiles.forEach(f=>{
- const div=document.createElement('div'); div.style.cssText="position:relative;border-radius:12px;overflow:hidden;background:#fff;cursor:pointer";
- div.innerHTML=`<img src="${f.name}" style="width:100%;height:200px;object-fit:cover;display:block" onerror="this.src='https://via.placeholder.com/300x200?text=${f.t}'"><div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.85));color:#fff;padding:24px 6px 6px 6px;font-size:11px"><b>${f.t}</b><br>KSh ${f.p} | <span style="color:#FF8AA2">Dep: ${f.d}</span></div>`;
- div.onclick=()=>location.href=`booking.html?service=${encodeURIComponent(f.t)}&price=${f.p}&deposit=${f.d}`;
- grid.appendChild(div);
-});
+files.forEach(f=>{let d=document.createElement('div');d.className='work';d.innerHTML=`<img src="${f.name}" onerror="this.style.display='none'"><div class="price-tag"><b>${f.t}</b><br>KSh ${f.p} | Dep KSh ${f.d}</div>`;d.onclick=()=>location.href=`booking.html?service=${encodeURIComponent(f.t)}&price=${f.p}&deposit=${f.d}`;grid.appendChild(d);});
 </script>
 </body></html>
