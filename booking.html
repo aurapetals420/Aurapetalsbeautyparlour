@@ -1,13 +1,11 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Book - Aura Petals</title><link rel="stylesheet" href="style.css">
-<style>.book-wrap{max-width:600px;margin:30px auto;background:#fff;padding:20px;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,.08)}.book-wrap input,.book-wrap select{width:100%;padding:12px;margin:8px 0;border:1px solid #ddd;border-radius:10px;transition:.2s}.error{border:1.5px solid #E91E63!important;background:#FFF0F0}.err-msg{color:#E91E63;font-size:11px;display:none}.deposit-box{background:#FFF0F0;border:1px dashed #C9A66B;padding:14px;border-radius:12px;margin:12px 0;text-align:center}.alert{ background:#f8d7da;color:#842029;padding:10px;border-radius:8px;font-size:13px;display:none;margin-bottom:10px}</style>
+<style>.book-wrap{max-width:600px;margin:30px auto;background:#fff;padding:20px;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,.08)}.book-wrap input,.book-wrap select{width:100%;padding:12px;margin:8px 0;border:1px solid #ddd;border-radius:10px}.error{border:1.5px solid #E91E63!important;background:#FFF0F0}.err-msg{color:#E91E63;font-size:11px;display:none}.deposit-box{background:#FFF0F0;border:1px dashed #C9A66B;padding:14px;border-radius:12px;margin:12px 0;text-align:center}.alert{background:#f8d7da;color:#842029;padding:10px;border-radius:8px;font-size:13px;display:none;margin-bottom:10px}</style>
 </head><body>
 <nav class="top-nav"><div class="logo">Aura Petals</div><div class="nav-links"><a href="index.html">HOME</a></div></nav>
-
 <div class="book-wrap">
 <h2 style="text-align:center">BOOK WITH 30% DEPOSIT</h2>
 <div id="topAlert" class="alert">⚠️ Please fill all fields before booking</div>
 <p style="text-align:center;font-size:13px">M-Pesa Business <b>247247</b> Account <b>6232</b></p>
-
 <label>Service *</label>
 <select id="service" onchange="calc()"><option value="">-- Choose Service --</option>
 <option value="Manicure Solid|500|150">Manicure Solid - KSh 500 (Dep 150)</option>
@@ -22,12 +20,10 @@
 <option value="Eyebrows Shaping|500|150">Eyebrows - KSh 500 (Dep 150)</option>
 <option value="Facial Treatments|1000|300">Facial - KSh 1000 (Dep 300)</option>
 </select><div class="err-msg" id="e-service">This field is required</div>
-
 <label>Name *</label><input type="text" id="name" placeholder="Your full name"><div class="err-msg" id="e-name">This field is required</div>
 <label>M-Pesa Phone *</label><input type="tel" id="phone" placeholder="07..."><div class="err-msg" id="e-phone">Enter valid phone (07... 10 digits)</div>
 <label>Date *</label><input type="date" id="date"><div class="err-msg" id="e-date">Select date</div>
 <label>Time *</label><input type="time" id="time"><div class="err-msg" id="e-time">Select time</div>
-
 <div class="deposit-box" id="depositBox" style="display:none">
 <div>Service: <b id="sName">-</b></div>
 <div>Full Price: KSh <b id="sPrice">0</b></div>
@@ -35,40 +31,12 @@
 <div style="font-size:12px">Balance KSh <span id="sBalance">0</span> after service</div>
 <div style="font-size:11px;margin-top:6px;background:#fff;padding:8px;border-radius:8px">M-Pesa Business <b>247247</b> Account <b>6232</b><br>Send receipt to 0716397341</div>
 </div>
-
 <button class="btn-pink" style="width:100%;margin-top:14px" onclick="validateAndBook()">BOOK NOW - PAY DEPOSIT</button>
-<p style="text-align:center;font-size:11px;margin-top:8px">All fields are required</p>
 </div>
-
 <script>
-function calc(){
- const v=document.getElementById('service').value;
- if(!v){document.getElementById('depositBox').style.display='none';return}
- const [name,price,deposit]=v.split('|');
- document.getElementById('sName').innerText=name; document.getElementById('sPrice').innerText=price;
- document.getElementById('sDeposit').innerText=deposit; document.getElementById('sBalance').innerText=price-deposit;
- document.getElementById('depositBox').style.display='block';
-}
-function showErr(id,show){document.getElementById(id).style.display=show?'block':'none'; const inpId=id.replace('e-',''); const el=document.getElementById(inpId); if(el){ if(show) el.classList.add('error'); else el.classList.remove('error'); }}
-function validateAndBook(){
- let ok=true;
- const service=document.getElementById('service').value;
- const name=document.getElementById('name').value.trim();
- const phone=document.getElementById('phone').value.trim();
- const date=document.getElementById('date').value;
- const time=document.getElementById('time').value;
- if(!service){showErr('e-service',true); ok=false;} else showErr('e-service',false);
- if(name.length<3){showErr('e-name',true); ok=false;} else showErr('e-name',false);
- if(!/^0[17]\d{8}$/.test(phone)){showErr('e-phone',true); ok=false;} else showErr('e-phone',false);
- if(!date){showErr('e-date',true); ok=false;} else showErr('e-date',false);
- if(!time){showErr('e-time',true); ok=false;} else showErr('e-time',false);
- const alertBox=document.getElementById('topAlert');
- if(!ok){alertBox.style.display='block'; alertBox.innerText='⚠️ Please fill all fields correctly before booking'; window.scrollTo({top:0,behavior:'smooth'}); return;}
- alertBox.style.display='none';
- const [sName,price,deposit]=service.split('|');
- const msg=`Hi Aura Petals! BOOKING REQUEST:\n\nService: ${sName}\nFull Price: KSh ${price}\nDeposit 30%: KSh ${deposit}\nBalance: KSh ${price-deposit}\n\nName: ${name}\nPhone: ${phone}\nDate: ${date}\nTime: ${time}\n\nI will pay deposit now via M-Pesa Business 247247 Account 6232 and send receipt.`;
- window.open(`https://wa.me/254716397341?text=${encodeURIComponent(msg)}`,'_blank');
-}
-(function(){ const p=new URLSearchParams(location.search); if(p.get('service')){ const sel=document.getElementById('service'); for(let o of sel.options){ if(o.value.toLowerCase().includes(p.get('service').toLowerCase())){ sel.value=o.value; calc(); break; } } } })();
+function calc(){const v=document.getElementById('service').value;if(!v){document.getElementById('depositBox').style.display='none';return}const[name,price,deposit]=v.split('|');document.getElementById('sName').innerText=name;document.getElementById('sPrice').innerText=price;document.getElementById('sDeposit').innerText=deposit;document.getElementById('sBalance').innerText=price-deposit;document.getElementById('depositBox').style.display='block';}
+function showErr(id,show){document.getElementById(id).style.display=show?'block':'none';const inpId=id.replace('e-','');const el=document.getElementById(inpId);if(el){if(show) el.classList.add('error');else el.classList.remove('error');}}
+function validateAndBook(){let ok=true;const service=document.getElementById('service').value;const name=document.getElementById('name').value.trim();const phone=document.getElementById('phone').value.trim();const date=document.getElementById('date').value;const time=document.getElementById('time').value;if(!service){showErr('e-service',true);ok=false;}else showErr('e-service',false);if(name.length<3){showErr('e-name',true);ok=false;}else showErr('e-name',false);if(!/^0[17]\d{8}$/.test(phone)){showErr('e-phone',true);ok=false;}else showErr('e-phone',false);if(!date){showErr('e-date',true);ok=false;}else showErr('e-date',false);if(!time){showErr('e-time',true);ok=false;}else showErr('e-time',false);const alertBox=document.getElementById('topAlert');if(!ok){alertBox.style.display='block';alertBox.innerText='⚠️ Please fill all fields correctly before booking';window.scrollTo({top:0,behavior:'smooth'});return;}alertBox.style.display='none';const[sName,price,deposit]=service.split('|');const msg=`Hi Aura Petals! BOOKING REQUEST:\n\nService: ${sName}\nFull Price: KSh ${price}\nDeposit 30%: KSh ${deposit}\nBalance: KSh ${price-deposit}\n\nName: ${name}\nPhone: ${phone}\nDate: ${date}\nTime: ${time}\n\nI will pay deposit now via M-Pesa Business 247247 Account 6232 and send receipt.`;window.open(`https://wa.me/254716397341?text=${encodeURIComponent(msg)}`,'_blank');}
+(function(){const p=new URLSearchParams(location.search);if(p.get('service')){const sel=document.getElementById('service');for(let o of sel.options){if(o.value.toLowerCase().includes(p.get('service').toLowerCase())){sel.value=o.value;calc();break;}}}})();
 </script>
 </body></html>
