@@ -19,6 +19,7 @@
 <option value="Wigs Installation|2500|750">Wigs - KSh 2500 (Dep 750)</option>
 <option value="Eyebrows Shaping|500|150">Eyebrows - KSh 500 (Dep 150)</option>
 <option value="Facial Treatments|1000|300">Facial - KSh 1000 (Dep 300)</option>
+<option value="Ear Piercing|300|90">Ear Piercing - KSh 300 (Dep 90)</option>
 </select><div class="err-msg" id="e-service">This field is required</div>
 <label>Name *</label><input type="text" id="name" placeholder="Your full name"><div class="err-msg" id="e-name">This field is required</div>
 <label>M-Pesa Phone *</label><input type="tel" id="phone" placeholder="07..."><div class="err-msg" id="e-phone">Enter valid phone (07... 10 digits)</div>
@@ -31,12 +32,12 @@
 <div style="font-size:12px">Balance KSh <span id="sBalance">0</span> after service</div>
 <div style="font-size:11px;margin-top:6px;background:#fff;padding:8px;border-radius:8px">M-Pesa Business <b>247247</b> Account <b>6232</b><br>Send receipt to 0716397341</div>
 </div>
-<button class="btn-pink" style="width:100%;margin-top:14px" onclick="validateAndBook()">BOOK NOW - PAY DEPOSIT</button>
+<button class="btn-pink" style="width:100%;margin-top:14px;background:#E91E63;color:#fff;padding:12px;border-radius:24px;border:none;font-weight:bold" onclick="validateAndBook()">BOOK NOW - PAY DEPOSIT</button>
 </div>
 <script>
 function calc(){const v=document.getElementById('service').value;if(!v){document.getElementById('depositBox').style.display='none';return}const[name,price,deposit]=v.split('|');document.getElementById('sName').innerText=name;document.getElementById('sPrice').innerText=price;document.getElementById('sDeposit').innerText=deposit;document.getElementById('sBalance').innerText=price-deposit;document.getElementById('depositBox').style.display='block';}
 function showErr(id,show){document.getElementById(id).style.display=show?'block':'none';const inpId=id.replace('e-','');const el=document.getElementById(inpId);if(el){if(show) el.classList.add('error');else el.classList.remove('error');}}
 function validateAndBook(){let ok=true;const service=document.getElementById('service').value;const name=document.getElementById('name').value.trim();const phone=document.getElementById('phone').value.trim();const date=document.getElementById('date').value;const time=document.getElementById('time').value;if(!service){showErr('e-service',true);ok=false;}else showErr('e-service',false);if(name.length<3){showErr('e-name',true);ok=false;}else showErr('e-name',false);if(!/^0[17]\d{8}$/.test(phone)){showErr('e-phone',true);ok=false;}else showErr('e-phone',false);if(!date){showErr('e-date',true);ok=false;}else showErr('e-date',false);if(!time){showErr('e-time',true);ok=false;}else showErr('e-time',false);const alertBox=document.getElementById('topAlert');if(!ok){alertBox.style.display='block';alertBox.innerText='⚠️ Please fill all fields correctly before booking';window.scrollTo({top:0,behavior:'smooth'});return;}alertBox.style.display='none';const[sName,price,deposit]=service.split('|');const msg=`Hi Aura Petals! BOOKING REQUEST:\n\nService: ${sName}\nFull Price: KSh ${price}\nDeposit 30%: KSh ${deposit}\nBalance: KSh ${price-deposit}\n\nName: ${name}\nPhone: ${phone}\nDate: ${date}\nTime: ${time}\n\nI will pay deposit now via M-Pesa Business 247247 Account 6232 and send receipt.`;window.open(`https://wa.me/254716397341?text=${encodeURIComponent(msg)}`,'_blank');}
-(function(){const p=new URLSearchParams(location.search);if(p.get('service')){const sel=document.getElementById('service');for(let o of sel.options){if(o.value.toLowerCase().includes(p.get('service').toLowerCase())){sel.value=o.value;calc();break;}}}})();
+(function(){const p=new URLSearchParams(location.search);if(p.get('service')){const sel=document.getElementById('service');for(let o of sel.options){if(o.value.toLowerCase().includes(p.get('service').toLowerCase())){sel.value=o.value;calc();break;}} if(p.get('price')&&p.get('deposit')){document.getElementById('sName').innerText=p.get('service');document.getElementById('sPrice').innerText=p.get('price');document.getElementById('sDeposit').innerText=p.get('deposit');document.getElementById('sBalance').innerText=p.get('price')-p.get('deposit');document.getElementById('depositBox').style.display='block';}})();
 </script>
 </body></html>
